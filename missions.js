@@ -908,6 +908,7 @@ function selectNewRank() {
     alert(`Invalid rank: "${inputRank}".`);
   }
   
+  alert(`Jumping to rank ${rank}!`);
   let splitUrl = window.location.href.split('?');
   window.location.assign(`${splitUrl[0]}?rank=${rank}`);
 }
