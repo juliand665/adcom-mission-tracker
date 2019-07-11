@@ -909,8 +909,8 @@ function selectNewRank() {
   }
   
   let splitUrl = window.location.href.split('?');
-  window.history.pushState({}, `rank ${rank}`, `?rank=${rank}`);
-  handleNavigation(window.location);
+  window.location.href = `?rank=${rank}`;
+  //window.history.pushState({}, `rank ${rank}`, `?rank=${rank}`);
 }
 
 function getLocal(mode, key) {
