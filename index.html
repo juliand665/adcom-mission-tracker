@@ -20,9 +20,11 @@
   <!-- iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <!--meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"-->
-  <link rel="apple-touch-icon" href="/apple-icon.png">
-  <link rel="apple-touch-startup-image" href="/launch.png">
+  <!--link rel="apple-touch-icon" href="/apple-icon.png"-->
+  <!--link rel="apple-touch-startup-image" href="/launch.png"-->
   <meta name="apple-mobile-web-app-title" content="Mission Tracker">
+  <!-- from https://stackoverflow.com/a/8173161/3213030; prevents the app opening safari when clicking on links  -->
+  <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
 </head>
 <body id="body">
   <nav class="navbar navbar-expand navbar-dark bg-dark">
